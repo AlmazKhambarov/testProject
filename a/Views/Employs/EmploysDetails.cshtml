@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Employeese>
+
+<h1>Products</h1>
+
+<!-- Кнопки для вызова скриптов -->
+<table class="table  table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th scope="col">
+                Age
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Department)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.DateOfEmployment)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Wage)
+            </th>
+            <th scope="col">
+                Details
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>@CalculateAge(item.BirthDate)</td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Department)
+                </td>
+
+                <td>@item.DateOfEmployment?.ToString("dd.MM.yyyy")</td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Wage)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@functions {
+    private string CalculateAge(DateTime? dateOfBirth)
+    {
+        if (dateOfBirth.HasValue)
+        {
+            var today = DateTime.Today;
+            var age = today.Year - dateOfBirth.Value.Year;
+
+            if (today.Month < dateOfBirth.Value.Month || (today.Month == dateOfBirth.Value.Month && today.Day < dateOfBirth.Value.Day))
+            {
+                age--;
+            }
+
+            return age.ToString();
+        }
+
+        return "N/A";
+    }
+}

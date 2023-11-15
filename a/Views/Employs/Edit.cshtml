@@ -1,0 +1,46 @@
+﻿@model Employeese
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Employee</h1>
+
+<form asp-action="Edit" asp-controller="Employs">
+    <div>
+        <label asp-for="UserName">Username:</label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Department">Department:</label>
+        <input asp-for="Department" class="form-control" />
+        <span asp-validation-for="Department" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="BirthDate">Birth Date:</label>
+        <input asp-for="BirthDate" type="date" class="form-control" />
+        <span asp-validation-for="BirthDate" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="DateOfEmployment">Date of Employment:</label>
+        <input asp-for="DateOfEmployment" type="date" class="form-control" />
+        <span asp-validation-for="DateOfEmployment" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Wage">Wage:</label>
+        <input asp-for="Wage" type="number" class="form-control" />
+        <span asp-validation-for="Wage" class="text-danger"></span>
+    </div>
+
+    <div>
+        <input type="submit" value="Update" class="btn btn-primary mt-4" />
+    </div>
+</form>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.10/jquery.validate.unobtrusive.min.js"></script>
