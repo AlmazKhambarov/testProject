@@ -41,3 +41,8 @@
 /Users/wp/Desktop/a/a/obj/Debug/net7.0/TestProject.pdb
 /Users/wp/Desktop/a/a/obj/Debug/net7.0/TestProject.genruntimeconfig.cache
 /Users/wp/Desktop/a/a/obj/Debug/net7.0/ref/TestProject.dll
+/Users/wp/Desktop/a/a/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/wp/Desktop/a/a/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/wp/Desktop/a/a/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/wp/Desktop/a/a/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/wp/Desktop/a/a/obj/Debug/net7.0/TestProject.MvcApplicationPartsAssemblyInfo.cs

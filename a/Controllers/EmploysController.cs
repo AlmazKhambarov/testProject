@@ -45,7 +45,6 @@ namespace a.Controllers
         }
         public IActionResult Create() => View();
 
-
         [HttpPost]
         public async Task<IActionResult> Create(Employeese employee)
         {
@@ -155,7 +154,7 @@ namespace a.Controllers
 
         }
 
-        public async Task<IActionResult> EmploysDetails(string filter)
+        public async Task<IActionResult> EmploysDetails(string filter, int age)
         {
             // Обработка запроса в зависимости от значения параметра filter
             switch (filter)
@@ -168,7 +167,7 @@ namespace a.Controllers
                     return View("Index", highSalaryEmployees);
                 case "olderThan70":
                     var s = await _applicationDbContext.Employee.ToListAsync();
-                    var olderThan70Employees = s.Where(e => CalculateAge(e.BirthDate) > 70).ToList();
+                    var olderThan70Employees = s.Where(e => CalculateAge(e.BirthDate) > age).ToList();
 
                     if (olderThan70Employees.Any())
                     {

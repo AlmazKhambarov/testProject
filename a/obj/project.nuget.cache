@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c3IwXsLUcTDVM2/JjGczXzx70sc5+GfTSz51SUgDZYcOSA7ehxIeswaU6qwgq9s0Yhn1I/vq94jiGHCvHlcHFA==",
+  "dgSpecHash": "9lFmCTorKDGQt8m/JIFGrVQoImWR9cykxmItFsulb5fVmLr/y9BoUItnTMRluj4HDFMhNOC+SS7ATChgWahIPg==",
   "success": true,
   "projectFilePath": "/Users/wp/Desktop/a/a/TestProject.csproj",
   "expectedPackageFiles": [
@@ -22,9 +22,13 @@
     "/Users/wp/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/wp/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/Users/wp/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/wp/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/wp/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/wp/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512",
     "/Users/wp/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.11/npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
+    "/Users/wp/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/wp/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/wp/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "/Users/wp/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/wp/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/wp/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
